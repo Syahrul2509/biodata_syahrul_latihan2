@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Biodata_Syahrul_Latihan2</string>
+    <string name="Nama">Syahrul Choliq M</string>
+    <string name="TTL">Bandung,25,Sept,02</string>
+    <string name="Alamat">Jl.Rancabogo</string>
+    <string name="Cita">Sukses</string>
+    <string name="Hobi">Menulis,Game</string>
+    <string name="RP">TK,SD,SMP,SMK</string>
+    <string name="Motto">Bela Kebenaran</string>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.telephony.CellInfo int getCellConnectionStatus()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.CellInfo.CONNECTION_NONE, android.telephony.CellInfo.CONNECTION_PRIMARY_SERVING, android.telephony.CellInfo.CONNECTION_SECONDARY_SERVING, android.telephony.CellInfo.CONNECTION_UNKNOWN}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.NetworkScanRequest int getScanType()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.NetworkScanRequest.SCAN_TYPE_ONE_SHOT, android.telephony.NetworkScanRequest.SCAN_TYPE_PERIODIC}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.PhoneNumberUtils byte[] numberToCalledPartyBCD(java.lang.String, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_EF_ADN, android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_CALLED_PARTY}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.PhoneNumberUtils java.lang.String calledPartyBCDFragmentToString(byte[], int, int, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_EF_ADN, android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_CALLED_PARTY}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.PhoneNumberUtils java.lang.String calledPartyBCDToString(byte[], int, int, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_EF_ADN, android.telephony.PhoneNumberUtils.BCD_EXTENDED_TYPE_CALLED_PARTY}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.ServiceState int getDuplexMode()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.ServiceState.DUPLEX_MODE_UNKNOWN, android.telephony.ServiceState.DUPLEX_MODE_FDD, android.telephony.ServiceState.DUPLEX_MODE_TDD}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SmsManager void injectSmsPdu(byte[], java.lang.String, android.app.PendingIntent) 1">
+    <annotation name="androidx.annotation.StringDef">
+      <val name="value" val="{android.telephony.SmsMessage.FORMAT_3GPP, android.telephony.SmsMessage.FORMAT_3GPP2}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SmsManager void sendTextMessageWithoutPersisting(java.lang.String, java.lang.String, java.lang.String, android.app.PendingIntent, android.app.PendingIntent)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="allOf" val="{&quot;android.permission.MODIFY_PHONE_STATE&quot;, &quot;android.permission.SEND_SMS&quot;}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionManager android.telephony.SubscriptionInfo getActiveSubscriptionInfo(int)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionManager android.telephony.SubscriptionInfo getActiveSubscriptionInfoForSimSlotIndex(int)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionManager int getActiveSubscriptionInfoCount()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionManager java.util.List&lt;android.telephony.SubscriptionInfo&gt; getActiveSubscriptionInfoList()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionPlan int getDataLimitBehavior()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_UNKNOWN, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_DISABLED, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_BILLED, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_THROTTLED}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.SubscriptionPlan.Builder android.telephony.SubscriptionPlan.Builder setDataLimit(long, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_UNKNOWN, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_DISABLED, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_BILLED, android.telephony.SubscriptionPlan.LIMIT_BEHAVIOR_THROTTLED}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager ACTION_PHONE_STATE_CHANGED">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager android.os.PersistableBundle getCarrierConfig()">
+    <annotation name="androidx.annotation.WorkerThread"/>
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager android.telephony.CellLocation getCellLocation()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="anyOf" val="{&quot;android.permission.ACCESS_COARSE_LOCATION&quot;, &quot;android.permission.ACCESS_FINE_LOCATION&quot;}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager android.telephony.NetworkScan requestNetworkScan(android.telephony.NetworkScanRequest, java.util.concurrent.Executor, android.telephony.TelephonyScanManager.NetworkScanCallback)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MODIFY_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager android.telephony.ServiceState getServiceState()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager boolean setNetworkSelectionModeManual(java.lang.String, boolean)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MODIFY_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager int getDataNetworkType()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager int getVoiceNetworkType()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getDeviceId()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getDeviceId(int)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getDeviceSoftwareVersion()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getGroupIdLevel1()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getImei()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getImei(int)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getLine1Number()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="anyOf" val="{&quot;android.permission.READ_PHONE_STATE&quot;, &quot;android.permission.READ_SMS&quot;, &quot;android.permission.READ_PHONE_NUMBERS&quot;}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getMeid()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getMeid(int)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getNai()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getSimSerialNumber()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getSubscriberId()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getVisualVoicemailPackageName()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getVoiceMailAlphaTag()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String getVoiceMailNumber()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.lang.String[] getForbiddenPlmns()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.util.List&lt;android.telephony.CellInfo&gt; getAllCellInfo()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.ACCESS_COARSE_LOCATION&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager java.util.List&lt;android.telephony.NeighboringCellInfo&gt; getNeighboringCellInfo()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.ACCESS_COARSE_LOCATION&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager void sendUssdRequest(java.lang.String, android.telephony.TelephonyManager.UssdResponseCallback, android.os.Handler)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.CALL_PHONE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager void setDataEnabled(boolean)">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MODIFY_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyManager void setNetworkSelectionModeAutomatic()">
+    <annotation name="androidx.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MODIFY_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.telephony.TelephonyScanManager.NetworkScanCallback void onError(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.telephony.NetworkScan.ERROR_MODEM_ERROR, android.telephony.NetworkScan.ERROR_INVALID_SCAN, android.telephony.NetworkScan.ERROR_MODEM_UNAVAILABLE, android.telephony.NetworkScan.ERROR_UNSUPPORTED, android.telephony.NetworkScan.ERROR_RADIO_INTERFACE_ERROR, android.telephony.NetworkScan.ERROR_INVALID_SCANID, android.telephony.NetworkScan.ERROR_INTERRUPTED}" />
+    </annotation>
+  </item>
+  <item name="android.telephony.VisualVoicemailService void onCellServiceConnected(android.telephony.VisualVoicemailService.VisualVoicemailTask, android.telecom.PhoneAccountHandle)">
+    <annotation name="androidx.annotation.MainThread"/>
+  </item>
+  <item name="android.telephony.VisualVoicemailService void onSimRemoved(android.telephony.VisualVoicemailService.VisualVoicemailTask, android.telecom.PhoneAccountHandle)">
+    <annotation name="androidx.annotation.MainThread"/>
+  </item>
+  <item name="android.telephony.VisualVoicemailService void onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask, android.telephony.VisualVoicemailSms)">
+    <annotation name="androidx.annotation.MainThread"/>
+  </item>
+  <item name="android.telephony.VisualVoicemailService void onStopped(android.telephony.VisualVoicemailService.VisualVoicemailTask)">
+    <annotation name="androidx.annotation.MainThread"/>
+  </item>
+</root>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
